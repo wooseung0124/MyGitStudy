@@ -513,6 +513,17 @@ push작업 또한 가능하게 된다.
 6. 나의 깃허브 업로드
 ㄴ> $ git push origin master
 
+# 20231107
+- upstream 이라는 이름의 Remote 저장소에서 master 브렌치의 commit 이력을 내려받기
+: git  fetch  upstream  master
+
+- 내려받은 commit은 upstream/master라는 이름의 브렌치가 트레킹하고 있다.
+해당 브렌치를 원하는 나의 local 브랜치(master)에 merge하기
+(현재 HEAD가 master를 가리키고 있어야 함)
+: git merge upstream/master
+
+- 나의 local 브렌치(master)의 commit 이력을 origin 이라는 이름의 Remote 저장소에 push하기
+: git  push  origin  master
 
 
 
